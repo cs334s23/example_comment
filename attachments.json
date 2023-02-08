@@ -1,0 +1,25 @@
+{
+  "data" : [ {
+    "id" : "0900006481ca6716",
+    "type" : "attachments",
+    "links" : {
+      "self" : "https://api.regulations.gov/v4/attachments/0900006481ca6716"
+    },
+    "attributes" : {
+      "agencyNote" : null,
+      "authors" : null,
+      "docAbstract" : null,
+      "docOrder" : 1,
+      "fileFormats" : [ {
+        "fileUrl" : "https://downloads.regulations.gov/USTR-2015-0010-0012/attachment_1.pdf",
+        "format" : "pdf",
+        "size" : 1077711
+      } ],
+      "modifyDate" : "2015-09-30T17:48:51Z",
+      "publication" : null,
+      "restrictReason" : null,
+      "restrictReasonType" : null,
+      "title" : "USITO_ China WTO Compliance Filing (Sep 23) FINAL"
+    }
+  } ]
+}
