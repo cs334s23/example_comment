@@ -12,6 +12,7 @@ def get_file_type(file_name):
     return file_name.split(".")[-1]
 
 
+
 def extract_text(file):
     """
     The extract text method will use the pypdf library to extract text from a pdf
@@ -39,8 +40,20 @@ def extract_text(file):
             text+= reader.pages[i].extract_text()
         print(text)
         return text
-outfile = open('USTR_example/extracted_attachment_1.txt', 'w')
 
-print(extract_text("USTR_example/attachment_1.pdf"),file = outfile)
+def format_json(commentId, docketId, attachments, extractedTextFilename):
+     json_attachment = {
+        "commentId": "USTR-2015-0010-0012",
+        "docketId": "USTR-2015-0010",
+        "attachments": [
+            {
+                "filename": "USTR-2015-0010-0012/attachment_1.pdf",
+                "extractedTextFilename": "USTR-2015-0010-0012/extracted_attachment_1.txt"
+            }
+	                    ]
+    }
+
+with open('USTR_example/extracted_attachment_1.txt', 'w') as outfile:
+    print(extract_text("USTR_example/attachment_1.pdf"),file = outfile)
     
 
